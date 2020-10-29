@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import Contents from "../Contents";
 
-function Home (props) {
+function Library (props) {
 
     const {} = props;
 
     return (
         <Container>
-            <Contents/>
+            Library
         </Container>
     )
 }
 
 const Container = styled.div`
 `
-export default Home;
+export default Library;

@@ -4,11 +4,11 @@ import {withRouter} from "react-router-dom";
 
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
-import Video from "./Video";
 import Subscribe from "./Subscribe";
 import More from "./More";
 import Setting from "./Setting";
 import Info from "./Info";
+import Feed from "./Feed";
 
 function Nav (props) {
 
@@ -16,7 +16,7 @@ function Nav (props) {
 
     return (
         <Container>
-            <Video/>
+            <Feed/>
             <Subscribe/>
             <More/>
             <Setting/>

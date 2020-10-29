@@ -1,3 +1,4 @@
+import React from "react";
 import {
     AiFillClockCircle, AiFillLike,
     BsCollectionPlayFill,
@@ -9,71 +10,71 @@ import {
     RiFireFill
 } from "react-icons/all";
 
-export const navRoute = [
+export const feedList = [
     {
-        icon: MdHome,
+        icon: <MdHome/>,
         name: '홈',
-        to: '/home',
+        to: '/',
         isActive: true,
     },
     {
-        icon: RiFireFill,
+        icon: <RiFireFill/>,
         name: '인기',
-        to: '/favorite',
+        to: '/feed/trending',
         isActive: false,
     },
     {
-        icon: BsCollectionPlayFill,
+        icon: <BsCollectionPlayFill/>,
         name: '구독',
-        to: '/subscribe',
+        to: '/feed/subscriptions',
         isActive: false,
     },
     {
-        icon: MdVideoLibrary,
+        icon: <MdVideoLibrary/>,
         name: '보관함',
-        to: '/home',
+        to: '/feed/library',
         isActive: false,
     },
     {
-        icon: MdHistory,
+        icon: <MdHistory/>,
         name: '시청 기록',
-        to: '/home',
+        to: '/feed/history',
         isActive: false,
     },
     {
-        icon: CgPlayButtonR,
+        icon: <CgPlayButtonR/>,
         name: '내 동영상',
-        to: '/home',
+        to: '/feed/my_videos',
         isActive: false,
     },
     {
-        icon: MdLocalMovies,
+        icon: <MdLocalMovies/>,
         name: '내 영화',
-        to: '/home',
+        to: '/feed/storefront',
         isActive: false,
     },
     {
-        icon: AiFillClockCircle,
+        icon: <AiFillClockCircle/>,
         name: '나중에 볼 동영상',
-        to: '/home',
+        to: '/playlist',
         isActive: false,
     },
     {
-        icon: AiFillLike,
+        icon: <AiFillLike/>,
         name: '좋아요 표시한 동영상',
-        to: '/home',
+        to: '/playlist',
         isActive: false,
     },
     {
-        icon: RiAirplayFill,
+        icon: <RiAirplayFill/>,
         name: '관련 재생목록 -',
-        to: '/home',
+        to: '/watch',
         isActive: false,
     },
     {
-        icon: CgPlayList,
+        icon: <CgPlayList/>,
         name: '즐겨찾기',
-        to: '/home',
+        to: '/playlist',
         isActive: false,
     },
 ]

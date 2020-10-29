@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import Contents from "../Contents";
 
-function Home (props) {
+function Subscribe (props) {
 
     const {} = props;
 
     return (
         <Container>
-            <Contents/>
+            Subscribe
         </Container>
     )
 }
 
 const Container = styled.div`
 `
-export default Home;
+export default Subscribe;
