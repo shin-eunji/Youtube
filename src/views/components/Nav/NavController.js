@@ -1,23 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import Routes from "./Routes";
 
-import Header from "./views/components/Header";
-
-
-
-function App (props) {
+function NavController (props) {
 
     const {} = props;
 
     return (
         <Container>
-            <Header/>
-            <Routes/>
+            NavController
         </Container>
     )
 }
 
 const Container = styled.div`
 `
-export default App;
+export default NavController;

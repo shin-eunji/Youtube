@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {NavContainer} from "../../../common/Layout/Components.Styled";
-
 import Item from "./Item";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 

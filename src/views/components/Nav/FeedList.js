@@ -137,5 +137,67 @@ export const feedList = {
             to: '/answer',
             isActive: false,
         },
-    ]
+    ],
+    info: [
+        {
+            name: '정보',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '프레스',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '저작권',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '문의하기',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '크리에이터',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '광고',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '개발자',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '이용약관',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '개인정보 보호',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '정책 및 안전',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: 'Youtube 작동의 원리',
+            to: '/',
+            isActive: false,
+        },
+        {
+            name: '새로운 기능 테스트하기',
+            to: '/',
+            isActive: false,
+        },
+    ],
 }

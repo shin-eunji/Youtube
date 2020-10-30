@@ -29,5 +29,4 @@ export const ContentContainer = styled.div`
 export const NavContainer = styled.div`
     width: 100%;
     margin: ${pxToRem(12)} 0;
-    border-bottom: 1px solid #eee;
 `;

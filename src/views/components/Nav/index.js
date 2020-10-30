@@ -23,7 +23,7 @@ function Nav (props) {
                 <Subscribe/>
                 <More data={feedList.more}/>
                 <Setting data={feedList.setting}/>
-                {/*<Info/>*/}
+                <Info data={feedList.info}/>
             </LNavContainer>
         </Container>
     )
