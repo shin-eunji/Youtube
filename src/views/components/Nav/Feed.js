@@ -2,38 +2,34 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {NavContainer} from "../../../common/Layout/Components.Styled";
-import {feedList} from './FeedList';
 
 import Item from "./Item";
 import {pxToRem} from "../../../common/Text/Text.Styled";
 
-function Feed (props) {
+function Feed(props) {
 
-    const {} = props;
+    const {
+        data
+    } = props;
 
     return (
         <Container>
-            <LNavContainer>
-                <NavItem>
+            <NavItem>
                 {
-                    feedList.map((item, index) => <Item key={index} {...item} />).slice(0,3)
+                    data.map((item, index) => <Item key={index} {...item} />).slice(0, 3)
                 }
-                </NavItem>
-                <NavItem>
+            </NavItem>
+            <NavItem>
                 {
-                    feedList.map((item, index) => <Item key={index} {...item} />).slice(3,12)
+                    data.map((item, index) => <Item key={index} {...item} />).slice(3, 12)
                 }
-                </NavItem>
-            </LNavContainer>
+            </NavItem>
         </Container>
     )
 }
 
 const Container = styled.div`
 `
-const LNavContainer = styled(NavContainer)`
-    overflow-y: scroll;
-`;
 const NavItem = styled.div`
     padding: ${pxToRem(12)} 0;
     border-bottom: 1px solid #eee;

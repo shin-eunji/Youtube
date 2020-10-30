@@ -9,6 +9,8 @@ import More from "./More";
 import Setting from "./Setting";
 import Info from "./Info";
 import Feed from "./Feed";
+import {feedList} from "./FeedList";
+import {NavContainer} from "../../../common/Layout/Components.Styled";
 
 function Nav (props) {
 
@@ -16,11 +18,13 @@ function Nav (props) {
 
     return (
         <Container>
-            <Feed/>
-            <Subscribe/>
-            <More/>
-            <Setting/>
-            <Info/>
+            <LNavContainer>
+                <Feed data={feedList.feed}/>
+                <Subscribe/>
+                <More data={feedList.more}/>
+                <Setting data={feedList.setting}/>
+                {/*<Info/>*/}
+            </LNavContainer>
         </Container>
     )
 }
@@ -32,6 +36,9 @@ const Container = styled.div`
     width: ${pxToRem(240)};
     height: calc(100% - ${pxToRem(56)});
     background: #fff;
+    overflow-y: scroll;
     
 `
+const LNavContainer = styled(NavContainer)`
+`;
 export default withRouter(Nav);
