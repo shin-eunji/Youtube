@@ -7,7 +7,6 @@ function NavController (props) {
 
     return (
         <Container>
-            NavController
         </Container>
     )
 }
