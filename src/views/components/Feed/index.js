@@ -4,7 +4,7 @@ import {Switch, Route} from "react-router-dom";
 
 import Home from "./Home";
 import Trending from "./Trending";
-import Subscribe from "../../components/Nav/Subscribe";
+import Subscribe from "../Nav/Subscribe";
 import Library from "./Library";
 
 function Feed (props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Contents from "../Contents";
+import Videos from "../../components/Videos";
 
 function Home (props) {
 
@@ -8,7 +8,7 @@ function Home (props) {
 
     return (
         <Container>
-            <Contents/>
+            <Videos/>
         </Container>
     )
 }

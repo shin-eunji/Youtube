@@ -1,24 +1,26 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 
-import axios from 'axios';
 import {pxToRem} from "../../../common/Text/Text.Styled";
+import {videoActions} from "../../../redux/actionCreators";
+import {useSelector} from "react-redux";
+import List from "./List";
 
-function Contents (props) {
+function Videos (props) {
 
     const {} = props;
 
+    const {list} = useSelector(state => state.video)
 
     useEffect(() => {
-        axios.get('https://www.googleapis.com/youtube/v3/videos')
-            .then(res => {
-                const data = res.data;
-                console.log("data", data);
-            })
+        videoActions.playList()
     }, [])
 
     return (
         <Container>
+            {
+                list.map((item, index) => <List key={index} {...item} />)
+            }
         </Container>
     )
 }
@@ -30,7 +32,4 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
 `
-const Item = styled.div`
-    
-`;
-export default Contents;
+export default Videos;
