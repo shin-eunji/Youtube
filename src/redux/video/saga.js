@@ -5,8 +5,8 @@ import API from "../../api";
 
 export default function*() {
     yield all([
-        takeLatest(Action.Types.PLAY_LIST, function*({part}) {
-            const result = yield call(API.playList, part)
+        takeLatest(Action.Types.PLAY_LIST, function*({data}) {
+            const result = yield call(API.playList, data)
             console.log("[Saga VIDEO_LIST] playList", result);
 
             if (result) {

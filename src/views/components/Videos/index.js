@@ -5,6 +5,7 @@ import {pxToRem} from "../../../common/Text/Text.Styled";
 import {videoActions} from "../../../redux/actionCreators";
 import {useSelector} from "react-redux";
 import List from "./List";
+import Item from "./Item";
 
 function Videos (props) {
 
@@ -13,14 +14,20 @@ function Videos (props) {
     const {list} = useSelector(state => state.video)
 
     useEffect(() => {
-        videoActions.playList()
+        videoActions.playList({
+            q: '슈카월드',
+            part: 'snippet',
+            maxResult: '10'
+        })
     }, [])
+
+    const renderItem = ({snippet}, index) => {
+        return <Item snippet={snippet}/>
+    }
 
     return (
         <Container>
-            {
-                list.map((item, index) => <List key={index} {...item} />)
-            }
+            <List data={list} render={renderItem}/>
         </Container>
     )
 }

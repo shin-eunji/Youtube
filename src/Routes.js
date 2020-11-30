@@ -5,16 +5,14 @@ import {Route, Switch} from "react-router-dom";
 import Home from "./views/pages/Home";
 
 
-function Routes (props) {
+function Routes(props) {
 
     const {} = props;
 
     return (
-        <Container>
-            <Switch>
-                <Route exact path={'/'} component={Home}></Route>
-            </Switch>
-        </Container>
+        <Switch>
+            <Route exact path={'/'} component={Home}></Route>
+        </Switch>
     )
 }
 

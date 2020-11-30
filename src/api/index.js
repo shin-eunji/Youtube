@@ -14,8 +14,6 @@ const request = async (url, method, data = {}) => {
         if(method === FetchConsts.GET) {
             config.params = data
             data.key = 'AIzaSyDo06Knwki8akv_QzVnPq8D_ltAv_rvuAk'
-            data.part = 'snippet'
-            data.maxResult = '10'
         } else {
             config.data = data
         }
@@ -35,7 +33,6 @@ const Fetch = {
 
 const API = {
     playList: (data) => Fetch.get(`https://www.googleapis.com/youtube/v3/search`, data),
-    // playList: (data) => Fetch.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=react`, data),
 }
 
 export default API;
