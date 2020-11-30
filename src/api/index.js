@@ -13,6 +13,7 @@ const request = async (url, method, data = {}) => {
         }
         if(method === FetchConsts.GET) {
             config.params = data
+            data.key = 'AIzaSyDo06Knwki8akv_QzVnPq8D_ltAv_rvuAk'
         } else {
             config.data = data
         }
