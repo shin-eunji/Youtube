@@ -5,14 +5,14 @@ import Video from "./Video";
 function Item (props) {
 
     const {
-        snippet
+        snippet = {}
     } = props;
 
     return (
         <Container>
             <Video/>
             <Thumb>
-                <img src={snippet.thumbnails.medium.url} alt=""/>
+                <img src={snippet.thumbnails?.medium?.url} alt=""/>
             </Thumb>
             <Text>
                 <Title>{snippet.title}</Title>

@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import {pxToRem} from "../../../../common/Text/Text.Styled";
 import {BiSearchAlt2, RiKeyboardBoxFill} from "react-icons/all";
-import {pxToRem} from "../../../common/Text/Text.Styled";
+import Input from "../../Search/Input";
 
-function Search (props) {
+function SearchForm (props) {
 
     const {} = props;
 
     return (
         <Container>
-            <Input type="text" placeholder={'검색'} />
+            <Input/>
             <Keyboard/>
             <Button>
                 <Icon/>
@@ -27,16 +28,6 @@ const Container = styled.div`
     border: 1px solid #ccc;
     border-radius: ${pxToRem(1)};
 `
-const Input = styled.input`
-    flex: 1;
-    border: none;
-    background: #fff;
-    padding: ${pxToRem(2)} ${pxToRem(6)};
-    &:focus {
-        outline: none;
-        box-shadow: none;
-    }   
-`;
 const Keyboard = styled(RiKeyboardBoxFill)`
     margin: 0 ${pxToRem(8)};
     width: ${pxToRem(18)};
@@ -60,4 +51,4 @@ const Icon = styled(BiSearchAlt2)`
     height: ${pxToRem(20)};
     color: #777;
 `;
-export default Search;
+export default SearchForm;

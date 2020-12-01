@@ -22,37 +22,37 @@ export const feedList = {
         {
             icon: <RiFireFill/>,
             name: '인기',
-            to: '/feed/trending',
+            to: '/Feed/trending',
             isActive: false,
         },
         {
             icon: <BsCollectionPlayFill/>,
             name: '구독',
-            to: '/feed/subscriptions',
+            to: '/Feed/subscriptions',
             isActive: false,
         },
         {
             icon: <MdVideoLibrary/>,
             name: '보관함',
-            to: '/feed/library',
+            to: '/Feed/library',
             isActive: false,
         },
         {
             icon: <MdHistory/>,
             name: '시청 기록',
-            to: '/feed/history',
+            to: '/Feed/history',
             isActive: false,
         },
         {
             icon: <CgPlayButtonR/>,
             name: '내 동영상',
-            to: '/feed/my_videos',
+            to: '/Feed/my_videos',
             isActive: false,
         },
         {
             icon: <MdLocalMovies/>,
             name: '내 영화',
-            to: '/feed/storefront',
+            to: '/Feed/storefront',
             isActive: false,
         },
         {

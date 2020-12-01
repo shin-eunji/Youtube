@@ -15,9 +15,9 @@ function Feed (props) {
         <Container>
             <Switch>
                 <Route exact path={'/'} component={Home}/>
-                <Route path={'/feed/trending'} component={Trending}/>
-                <Route path={'/feed/subscriptions'} component={Subscribe}/>
-                <Route path={'/feed/library'} component={Library}/>
+                <Route path={'/Feed/trending'} component={Trending}/>
+                <Route path={'/Feed/subscriptions'} component={Subscribe}/>
+                <Route path={'/Feed/library'} component={Library}/>
             </Switch>
         </Container>
     )

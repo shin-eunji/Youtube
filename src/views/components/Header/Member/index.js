@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {FaUserCircle} from "react-icons/all";
-import {pxToRem} from "../../../common/Text/Text.Styled";
+import {pxToRem} from "../../../../common/Text/Text.Styled";
 
 function Member (props) {
 

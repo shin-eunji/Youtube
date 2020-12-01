@@ -17,7 +17,7 @@ function Videos (props) {
         videoActions.playList({
             q: '슈카월드',
             part: 'snippet',
-            maxResult: '10'
+            maxResult: 10
         })
     }, [])
 
